@@ -3,3 +3,57 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(40, 40, 70);
+}
+
+.WhatClirntsSay{
+    background-color: rgba(0, 10, 55, 0.3);
+    color: white;
+    padding: 15px;
+}
+
+.FeedbackUlHorizontal{
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+}
+
+.StarsUlHorizontal{
+    display: flex;
+    list-style:none;
+}
+
+.smallText{
+    font-size: 14px;
+}
+
+#HCentral{
+    text-align:center;
+    margin: 0 auto;
+}
+
+#CentralText{
+    text-align:center;
+    box-sizing: border-box;
+    width: 27%;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+#Star li{
+    margin: 1px;
+}
+
+#FeedbackBox{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    color:black;
+    width: 300px;
+}
+
+
+
+
+
