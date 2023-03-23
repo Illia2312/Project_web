@@ -55,6 +55,193 @@ body{
     width: 300px;
 }
 
+/* Nozdrin Oleksii */
+
+.Boxes{
+    height: 890px;
+}
+
+.case-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.case{
+    margin-right: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 328px;
+    height: 112px;
+    background: #FAFAFA;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.case2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 0px;
+        width: 1050px;
+        height: 148px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+}
+
+.Box4Text{
+    margin-left: 193px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 0px;
+    width: 1050px;
+    height: 197px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Box4Button{
+    margin-left: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 0px;
+    width: 1050px;
+    height: 197px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Box4Button2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 349px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Button1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 36px;
+    gap: 10px;
+    width: 185px;
+    height: 48px;
+    background: #FF7B47;
+    border-radius: 37px;
+    border: 0px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Button2{
+     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 36px;
+    gap: 10px;
+    width: 154px;
+    height: 48px;
+    color:#FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 37px;
+    background-color: rgb(40, 40, 70);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.BigText{
+    width: 171px;
+    height: 77px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.SmallText{
+    width: 511px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align:left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.incase{
+    display: flex;
+
+}
+
+.textincase{
+    margin-left: 15px;
+    margin-top: 22px;
+    width: 160px;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.textincase2{
+        width: 113px;
+        height: 28px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+
 /* Sofiia Tymofieieva */
 
 .kotik {
