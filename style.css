@@ -16,7 +16,10 @@ body{
 }
 
 .FeedbackUlHorizontal{
+    
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style:none;
 }
