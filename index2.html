@@ -1,0 +1,171 @@
+PS C:\Users\User\Lab1\Lab1> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gitHistory.txt
+
+PS C:\Users\User\Lab1\Lab1> git commit -m "gitHistory commit"
+[master 5df0fde] gitHistory commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 gitHistory.txt
+PS C:\Users\User\Lab1\Lab1> git log
+commit 5df0fde1cbab2285fe9d3e48887026374704c6de (HEAD -> master)
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:05:46 2023 +0200
+
+    gitHistory commit
+
+commit 95b2c405b2b1b469eb20ba551f214bac8e14aff6
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:03:38 2023 +0200
+
+     Task 4.2 completed
+...skipping...
+commit 95b2c405b2b1b469eb20ba551f214bac8e14aff6
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:03:38 2023 +0200
+
+     Task 4.2 completed
+
+commit 69aab6f407688eac337c5c57df4eeb59e4895fa3
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:01:40 2023 +0200
+
+     Relax and doing Lab1
+...skipping...
+commit 95b2c405b2b1b469eb20ba551f214bac8e14aff6
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:03:38 2023 +0200
+
+     Task 4.2 completed
+
+commit 69aab6f407688eac337c5c57df4eeb59e4895fa3
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:01:40 2023 +0200
+
+     Relax and doing Lab1
+...skipping...
+commit 5df0fde1cbab2285fe9d3e48887026374704c6de (HEAD -> master)
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:05:46 2023 +0200
+
+    gitHistory commit
+
+commit 95b2c405b2b1b469eb20ba551f214bac8e14aff6
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:03:38 2023 +0200
+
+     Task 4.2 completed
+:
+ *  History restored 
+
+>> git branch -M main
+>> git push -u origin main
+Enumerating objects: 9, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.20 KiB | 411.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Illia2312/Lab1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\Lab1\Lab1> git checkout -b newBranch
+Switched to a new branch 'newBranch'
+PS C:\Users\User\Lab1\Lab1> git status
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitHistory.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\User\Lab1\Lab1> git add .
+On branch newBranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+PS C:\Users\User\Lab1\Lab1> git merge
+PS C:\Users\User\Lab1\Lab1> git remote add origin https://github.com/Illia2312/Lab1.git
+>> git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\Lab1\Lab1> git merge 
+PS C:\Users\User\Lab1\Lab1> git pull
+Already up to date.
+PS C:\Users\User\Lab1\Lab1> git push
+Everything up-to-date
+PS C:\Users\User\Lab1\Lab1> git pullrequest
+git: 'pullrequest' is not a git command. See 'git --help'.
+PS C:\Users\User\Lab1\Lab1> git pull
+Already up to date.
+PS C:\Users\User\Lab1\Lab1> git remote add origin https://github.com/Illia2312/Lab1.git
+>> git branch -M main
+>> git push -u origin main
+error: remote origin already exists.
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\Lab1\Lab1> 
+ *  History restored 
+
+>> git push -u origin main
+error: remote origin already exists.
+branch 'main' set up to track 'origin/main'.
+checkout : Имя "checkout" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути,  
+после чего повторите попытку.
+строка:1 знак:1
++ checkout -b newbranch
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (checkout:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\Lab1\Lab1> git checkout -b newbranch
+Switched to a new branch 'newbranch'
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   gitHistory.txt
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+PS C:\Users\User\Lab1\Lab1> git add .
+PS C:\Users\User\Lab1\Lab1> git status
+On branch newbranch
+  (use "git restore --staged <file>..." to unstage)
+        modified:   gitHistory.txt
+        new file:   index.html
+        new file:   index2.html
+
+PS C:\Users\User\Lab1\Lab1> git commit -m "new pre last commit"
+[newbranch 441935a] new pre last commit
+ 3 files changed, 55 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+ create mode 100644 index2.html
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+    git branch --set-upstream-to=origin/<branch> newbranch
+
+PS C:\Users\User\Lab1\Lab1>
+PS C:\Users\User\Lab1\Lab1> git status
+On branch newbranch
+nothing to commit, working tree clean
+PS C:\Users\User\Lab1\Lab1> git pull
+PS C:\Users\User\Lab1\Lab1> git remote add origin https://github.com/Illia2312/Task8.git
+>> git push -u origin main
+error: remote origin already exists.
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Illia2312/Lab1.git
+   5df0fde..441935a  main -> main
+warning: branch.main.remote has multiple values
+warning: branch.main.merge has multiple values
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\Lab1\Lab1> git merge
+Already up to date.
+PS C:\Users\User\Lab1\Lab1> git pull
+Already up to date.
+PS C:\Users\User\Lab1\Lab1> 

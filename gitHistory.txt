@@ -1,0 +1,61 @@
+PS C:\Users\User\Lab1\Lab1> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitHistory.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PS C:\Users\User\Lab1\Lab1> git add .
+PS C:\Users\User\Lab1\Lab1> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gitHistory.txt
+
+PS C:\Users\User\Lab1\Lab1>
+
+
+
+PS C:\Users\User\Lab1\Lab1> git commit -m "gitHistory commit"
+[master 5df0fde] gitHistory commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 gitHistory.txt
+PS C:\Users\User\Lab1\Lab1> git log
+commit 5df0fde1cbab2285fe9d3e48887026374704c6de (HEAD -> master)
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:05:46 2023 +0200
+
+    gitHistory commit
+
+commit 95b2c405b2b1b469eb20ba551f214bac8e14aff6
+Author: Illia 2312 <illyadenisov670@gmail.com>
+Date:   Fri Feb 10 21:03:38 2023 +0200
+
+     Task 4.2 completed
+
+
+
+
+$ find .git/objects
+.git/objects
+.git/objects/1e
+.git/objects/1e/0187985487d12d3803181658e64c5d21bf8dda
+.git/objects/43
+.git/objects/43/6c4a522abbc803d952116820b80e16b34bb869
+.git/objects/4c
+.git/objects/4c/8106e22f618fd1dac5e8c47bf9f121fdeeba80
+.git/objects/5d
+.git/objects/5d/f0fde1cbab2285fe9d3e48887026374704c6de
+.git/objects/69
+.git/objects/69/aab6f407688eac337c5c57df4eeb59e4895fa3
+.git/objects/95
+.git/objects/95/b2c405b2b1b469eb20ba551f214bac8e14aff6
+.git/objects/e0
+.git/objects/e0/3b56b39c78489b86baa2e8403d8271dc3f02ee
+.git/objects/e8
+.git/objects/e8/607fd95ecc36f792e73418f395d2e21f0e245b
+.git/objects/fc
+.git/objects/fc/62fc733fa071216ee2634a4f0fecefe5f6c844
+.git/objects/info
+.git/objects/pack
