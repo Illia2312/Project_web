@@ -564,7 +564,7 @@ footer
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background: #111;
+    background: rgb(30, 30, 54);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -602,7 +602,10 @@ footer .footer1 h2:before
     left: 0;
     width: 50px;
     height: 2px; 
-    background: #f00;
+    background: #fffb00;
+}
+.footer1 p:hover {
+ cursor: default;
 }
 footer h2:hover 
 {
@@ -625,8 +628,8 @@ footer p {
 .sci li a 
 {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #222;
     display: flex;
     justify-content: center;
@@ -637,7 +640,7 @@ footer p {
 }
 .sci li a:hover
 {
-    background: #f00;
+    background: #fffb00;
     
 }
 .Links 
@@ -757,7 +760,7 @@ a {
     padding: 22px 0;
 }
 .container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 } 
@@ -766,8 +769,8 @@ a {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    margin-right: 450px;
-    margin-left: -400px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 .page-cont {
     display: flex;
@@ -776,6 +779,7 @@ a {
 .list {
     list-style: none;
     margin: 0;
+    padding-left: 150px;
 }
 .menu {
     display: flex;
@@ -818,5 +822,78 @@ letter-spacing: 0.2px;
 
 .btn-wrap
 {
-   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+
+
+.Class1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container_Team {
+    position: relative;
+    width: 1614px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.Container_Team  .Card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.Container_Team  .Card .Image1 {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Container_Team  .Card .Image1 img 
+{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.Container_Team  .Card .Text_content 
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.Container_Team  .Card:hover .Text_content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+    border: 100px;
+} 
+.Container_Team .Card:hover
+{
+    height: 420px;
 }
