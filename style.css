@@ -251,30 +251,37 @@ body{
 
 
 /* Sofiia Tymofieieva */
+/* Там де відступ перед текстом(2 справа), так і було у figma */
 
-.kotik {
-    height: 890px;
-}
-
+/* Налаштування основого div */
 .myrr {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px;
-    gap: 100px;
+    /* padding: 50px; */
+    padding-bottom: 50px;
 
-    width: 1050px;
-    height: 854px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Налаштування для тексту заголовку */
 .myrr-ka {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
 
-    width: 864px;
-    height: 112px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 120px;
 
     flex: none;
     order: 0;
@@ -283,8 +290,8 @@ body{
 }
 
 .myrr-ka>h2 {
-    width: 252px;
-    height: 57px;
+    max-width: 252px;
+    /* height: 57px; */
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -303,8 +310,8 @@ body{
 }
 
 .myrr-ka>p {
-    width: 511px;
-    height: 40px;
+    max-width: 511px;
+    /* height: 40px; */
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -322,14 +329,20 @@ body{
     flex-grow: 0;
 }
 
+/* Налаштування для картинки і тексту */
+
 .myrr-chik {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 120px;
 
-    width: 1053px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    /* width: 1053px; */
     height: 442px;
 
     flex: none;
@@ -338,48 +351,114 @@ body{
     flex-grow: 0;
 }
 
-.myrr-chikmedia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 35px;
+/* Якщо ширина екрану стане 800 і менше пікселей, змінюємо певні параметри(із колонок в строки) */
+@media (max-width: 800px) {
+    .myrr-chik {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-    width: 600px;
-    height: 442px;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+        /* width: 1053px; */
+        height: 100%;
+
+        flex: none;
+        order: 1;
+        align-self: flex-start;
+        flex-grow: 0;
+    }
+    .myrr-ka {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        margin-bottom: 30px;
+    
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+    }
+    .myrr-chikimage {
+        background: url('Images/media\ bg-cover.png') no-repeat;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 450px;
+    }
 }
 
-.myrr-chikmedia>div {
-    box-sizing: border-box;
-
-    width: 597px;
-    height: 442px;
-
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
-    border: 1px solid linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
-    border-radius: 5px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+/* Налаштування для кнопки */
+@media (max-width: 700px) {
+    .myrr-chikbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24.4px 18.4px !important;
+    
+        background: #0D5C63;
+        border: none;
+        border-radius: 73.6px;
+    
+        cursor: pointer;
+    }
+    .myrr-chikbtn>img {
+        width: 50%;
+    }
 }
 
+/* Налаштування для кнопки */
+@media (max-width: 400px) {
+    .myrr-chikbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17.4px 12.4px !important;
+    
+        background: #0D5C63;
+        border: none;
+        border-radius: 73.6px;
+    
+        cursor: pointer;
+    }
+    .myrr-chikbtn>img {
+        width: 50%;
+    }
+}
+
+/* Налаштування для картинки(відео), мяу */
 .myrr-chikimage {
-    background-image: url('images/media\ bg-cover.png');
+    background: url('Images/media\ bg-cover.png') no-repeat;
+
+    margin-right: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    height: 100%;
+
+    background-size: contain;
+    background-position: center;
+    width: 70%;
+    height: 450px;
 }
 
+/* Налаштування для кнопки */
 .myrr-chikbtn {
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 34.8px 36.8px;
 
     background: #0D5C63;
@@ -389,15 +468,14 @@ body{
     cursor: pointer;
 }
 
+/* Налаштування для тексту(всі наступні також налаштовують текст) */
 .myrr-chikinfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
 
-    width: 333px;
-    height: 438px;
+    max-width: 333px;
+    /* height: 438px; */
 
     flex: none;
     order: 1;
@@ -408,10 +486,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5px 0px;
-    gap: 10px;
 
-    width: 330px;
+    /* width: 330px; */
     height: 224px;
 
     flex: none;
@@ -420,8 +496,8 @@ body{
 }
 
 .myrr-chiktext>h2 {
-    width: 324px;
-    height: 114px;
+    /* max-width: 324px; */
+    /* height: 114px; */
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -439,8 +515,8 @@ body{
 }
 
 .myrr-chiktext>p {
-    width: 330px;
-    height: 60px;
+    max-width: 330px;
+    /* height: 60px; */
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -461,10 +537,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    margin-bottom: 12px;
 
-    width: 333px;
-    height: 77px;
+    /* width: 333px; */
+    /* height: 77px; */
 
     border-radius: 9px;
 
@@ -477,11 +553,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
 
-    width: 329px;
-    height: 77px;
+    /* width: 329px; */
+    /* height: 77px; */
 
     flex: none;
     order: 0;
@@ -489,8 +563,8 @@ body{
 }
 
 .myrr-chiktext2>div>img {
-    width: 32px;
-    height: 32px;
+    /* width: 32px; */
+    /* height: 32px; */
 
     flex: none;
     order: 0;
@@ -501,11 +575,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 5px;
 
-    width: 277px;
-    height: 77px;
+    /* width: 277px; */
+    /* height: 77px; */
 
     flex: none;
     order: 1;
@@ -514,8 +586,8 @@ body{
 
 .myrr-chiksubtext>h5,
 .myrr-chiktext3>div>div>h5 {
-    width: 277px;
-    height: 48px;
+    /* width: 277px; */
+    /* height: 48px; */
 
     font-family: 'Montserrat';
     font-style: normal;
