@@ -829,6 +829,7 @@ a {
     top: 0;
     width: 100%;
     padding: 22px 0;
+    
 }
 .container {
     width: 1000px;
@@ -992,5 +993,10 @@ letter-spacing: 0.2px;
 }
 
 @keyframes typing {
-    from {width: 0 }
+    from { width: 0 }
+}
+
+.fab fa-facebook {
+    width: 30px;
+    height: 30px;
 }
