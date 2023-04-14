@@ -705,8 +705,8 @@ footer p {
 .sci li a 
 {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #222;
     display: flex;
     justify-content: center;
@@ -825,6 +825,7 @@ a {
     text-decoration: none; 
 }
 .header-page {
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -937,13 +938,16 @@ letter-spacing: 0.2px;
     top: -60px;
     left: 5px;
     z-index: 1;
+    border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .Container_Team  .Card .Image1 img 
 {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
+    height: 100%;
+    display: block;
 }
 
 .Container_Team  .Card .Text_content 
@@ -996,7 +1000,7 @@ letter-spacing: 0.2px;
     from { width: 0 }
 }
 
-.fab fa-facebook {
-    width: 30px;
-    height: 30px;
+fa-brands, .fab {
+    font-weight: 400;
+    font-size: 30px;
 }
